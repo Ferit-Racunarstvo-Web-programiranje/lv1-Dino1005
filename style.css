@@ -232,9 +232,31 @@ p {
   margin-bottom: 10em;
 }
 
+.portfolio-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .portfolio-title h2 {
   margin-top: 0.8em;
   margin-bottom: 2em;
+}
+
+.title-button button {
+  border: none;
+  background-color: #e62872;
+  font-size: var(--text2);
+  border-radius: 10px;
+  color: #fff;
+  padding: 10%;
+  width: 12em;
+  display: inline-flex;
+  align-items: center;
+}
+.title-button button img {
+  width: 2em;
+  padding: 0 2% 0 0;
 }
 
 .portfolio-cards {
@@ -291,6 +313,7 @@ p {
   padding: 10% 7% 0 3%;
   margin-bottom: 5em;
   background-color: var(--background-color);
+  padding-bottom: 10%;
 }
 
 .testimonials-title h2 {
@@ -340,6 +363,209 @@ p {
 
 .person .details p {
   padding: 0%;
+}
+
+/* ----------------------------------------------------------------------- CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 7% 10% 3%;
+  text-align: center;
+}
+
+.contact-text {
+  margin-top: 2%;
+}
+
+.contact-text p {
+  line-height: 1.5em;
+  margin-top: 3%;
+  color: var(--font-color);
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.top-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+
+.input-box:nth-child(2n) {
+  justify-content: end;
+}
+
+.input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 2em;
+}
+
+.input-box label {
+  width: 95%;
+  color: var(--heading-color);
+  font-size: var(--text);
+  font-weight: 400;
+  margin: 1em 0;
+  text-align: start;
+}
+
+.input-box input {
+  height: 3em;
+  width: 95%;
+  border-radius: 10px;
+  font-size: var(--text);
+  border: 1px solid var(--primary-color);
+  padding: 0 1%;
+}
+
+.bot-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.topic {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.topic label {
+  width: 100%;
+  color: var(--heading-color);
+  font-size: var(--text);
+  font-weight: 400;
+  margin: 1em 0;
+  text-align: start;
+}
+
+.topic select {
+  height: 3em;
+  width: 100%;
+  border-radius: 10px;
+  font-size: var(--text);
+  border: 1px solid var(--primary-color);
+  padding: 0 1%;
+}
+
+.message {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.message label {
+  width: 100%;
+  color: var(--heading-color);
+  font-size: var(--text);
+  font-weight: 400;
+  margin: 1em 0;
+  text-align: start;
+}
+
+.message textarea {
+  height: 10em;
+  width: 100%;
+  border-radius: 10px;
+  font-size: var(--text);
+  border: 1px solid var(--primary-color);
+  padding: 1%;
+  resize: none;
+}
+
+.terms {
+  display: flex;
+  width: 100%;
+  padding-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms label {
+  width: 95%;
+  color: var(--heading-color);
+  font-size: var(--text);
+  font-weight: 400;
+  margin: 1em 0;
+  text-align: start;
+}
+
+.terms input {
+  height: 1.5em;
+  width: 5%;
+  padding: 1%;
+}
+
+form .submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  width: 11rem;
+}
+
+.submit-button a {
+  color: #fff;
+  font-size: var(--heading3);
+}
+
+/* ----------------------------------------------------------------------- FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  padding: 3% 7% 6% 3%;
+}
+
+.footer .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.footer .logo img {
+  width: 200px;
+}
+
+.footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.footer .social img {
+  width: 3em;
+}
+
+.footer .bot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
 }
 
 /* ----------------------------------------------------------------------- RESPONSIVE */
@@ -405,5 +631,18 @@ p {
 
   .testimonials-cards {
     flex-direction: column;
+  }
+
+  .footer .logo img {
+    width: 150px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer nav {
+    flex-direction: column;
+    padding: 20px 0;
   }
 }
