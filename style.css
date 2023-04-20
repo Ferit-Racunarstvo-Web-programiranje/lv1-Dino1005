@@ -4,6 +4,8 @@
   --primary-color: #5e3bee;
   --secondary-color: #000;
   --background-color: #f5fcff;
+  --heading-color: #282938;
+  --font-color: #1c1e53;
   --primary-font: "Roboto", sans-serif;
 
   --heading1: 4.5em;
@@ -19,6 +21,7 @@
   margin: 0;
   padding: 0;
   color: var(--secondary-color);
+  font-weight: 400;
 }
 
 a {
@@ -39,6 +42,39 @@ button {
   border-radius: 5px;
   font-weight: 500;
 }
+
+h1 {
+  font-size: var(--heading1);
+  font-weight: 900;
+  line-height: 1.2em;
+  padding-top: 0.6em;
+  color: var(--heading-color);
+}
+
+h2 {
+  font-size: var(--heading2);
+  color: var(--heading-color);
+  font-weight: 900;
+}
+
+h3 {
+  font-size: var(--heading3);
+  color: var(--heading-color);
+  font-weight: 900;
+}
+
+h4 {
+  font-size: var(--text2);
+  color: var(--heading-color);
+  font-weight: 900;
+}
+
+p {
+  font-size: var(--text);
+  padding-top: 0.4em;
+}
+
+/* ----------------------------------------------------------------------- NAVBAR */
 
 .contact-button a {
   color: var(--primary-color);
@@ -69,34 +105,12 @@ button {
   gap: 2em;
 }
 
-h1 {
-  font-size: var(--heading1);
-  font-weight: 900;
-  line-height: 1.2em;
-  padding-top: 0.6em;
-}
-
-h2 {
-  font-size: var(--heading2);
-}
-
-h3 {
-  font-size: var(--heading3);
-}
-
-h4 {
-  font-size: var(--text2);
-}
-
-p {
-  font-size: var(--text);
-  padding-top: 0.4em;
-}
+/* ----------------------------------------------------------------------- MAIN */
 
 .main {
   background-color: var(--background-color);
   display: flex;
-  padding: 5% 7% 0 4%;
+  padding: 5% 7% 0 3%;
   box-shadow: inset 0 20px 20px -22px rgba(0, 0, 0, 0.2);
   height: 100vh;
 }
@@ -109,6 +123,7 @@ p {
 .main-text p {
   width: 80%;
   line-height: 1.5em;
+  color: var(--font-color);
 }
 
 .prp-text {
@@ -135,8 +150,10 @@ p {
   padding: 1%;
 }
 
+/* ----------------------------------------------------------------------- EXPERTISE */
+
 .expertise {
-  padding: 10% 7% 0 4%;
+  padding: 10% 7% 0 3%;
   margin-bottom: 5em;
 }
 
@@ -160,6 +177,10 @@ p {
   box-shadow: 0 6px 2px -2px var(--primary-color);
 }
 
+.expertise-card:hover p {
+  color: #1c1e53;
+}
+
 .expertise-card img {
   width: 5em;
   background-color: white;
@@ -169,9 +190,159 @@ p {
   margin-bottom: 2em;
 }
 
-.expertise-card h3 {
-  margin-bottom: 1em;
+/* ----------------------------------------------------------------------- ABOUT */
+
+.about {
+  background-color: #fff;
+  display: flex;
+  padding: 5% 7% 0 3%;
+  height: 70em;
 }
+
+.about-text {
+  margin-top: 15%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text h2 {
+  margin-top: 0.8em;
+}
+
+.about-text p {
+  line-height: 1.5em;
+  color: var(--font-color);
+  margin-top: 3%;
+}
+
+.about-img {
+  width: 170%;
+  background-image: url("/images/About\ Me.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding: 1%;
+}
+
+/* ----------------------------------------------------------------------- PORTFOLIO */
+
+.portfolio {
+  padding: 10% 7% 0 3%;
+  margin-bottom: 10em;
+}
+
+.portfolio-title h2 {
+  margin-top: 0.8em;
+  margin-bottom: 2em;
+}
+
+.portfolio-cards {
+  display: flex;
+  gap: 3em;
+}
+
+.portfolio-card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding-bottom: 3em;
+}
+
+.portfolio-card img {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 2em;
+}
+
+.portfolio h3 {
+  padding: 5%;
+}
+
+.portfolio p {
+  padding: 0 5% 5% 5%;
+}
+
+.portfolio .dribble {
+  display: flex;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+.dribble a {
+  font-weight: 900;
+  padding-bottom: 3%;
+  padding-right: 3%;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.dribble img {
+  margin: 0;
+  width: 1.5em;
+  padding-bottom: 3%;
+  border-radius: 0%;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* ----------------------------------------------------------------------- TESTIMONIALS */
+
+.testimonials {
+  padding: 10% 7% 0 3%;
+  margin-bottom: 5em;
+  background-color: var(--background-color);
+}
+
+.testimonials-title h2 {
+  margin-top: 0.8em;
+  margin-bottom: 2em;
+}
+
+.testimonials-cards {
+  display: flex;
+  gap: 3em;
+}
+
+.testimonials-card {
+  border: 1px solid #006b6a;
+  border-radius: 15px;
+  padding-bottom: 3em;
+}
+
+.testimonials-card img {
+  width: 40%;
+  padding: 7%;
+  border-radius: 15px;
+}
+
+.testimonials p {
+  padding: 0 5% 5% 7%;
+}
+
+.testimonials .person {
+  display: flex;
+  padding-left: 5%;
+}
+
+.person img {
+  margin: 0;
+  width: 10em;
+  border-radius: 0%;
+  padding: 5%;
+}
+
+.person .details {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.person .details p {
+  padding: 0%;
+}
+
+/* ----------------------------------------------------------------------- RESPONSIVE */
 
 @media screen and (max-width: 1000px) {
   .header .logo img {
@@ -204,10 +375,35 @@ p {
     height: 100%;
     background-position: center;
     margin-top: 7em;
+    margin-bottom: 3em;
     scale: 1.5;
   }
 
   .expertise-cards {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img {
+    height: 100%;
+    width: 100%;
+    margin-top: 7em;
+    scale: 1.5;
+    background-position: center;
+  }
+
+  .portfolio-cards {
+    flex-direction: column;
+  }
+
+  .portfolio-title {
+    margin-top: 5em;
+  }
+
+  .testimonials-cards {
     flex-direction: column;
   }
 }
