@@ -143,7 +143,7 @@ p {
 
 .main-img {
   width: 100%;
-  background-image: url("/images/Main/Background.png");
+  background-image: url("images/Main/Background.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -218,7 +218,7 @@ p {
 
 .about-img {
   width: 170%;
-  background-image: url("/images/About\ Me.png");
+  background-image: url("images/About\ Me.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: center;
